@@ -1,0 +1,61 @@
+<header id="topnav">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo j.png"  alt="" width="30" height="24" class="img mb-3 d-inline-block align-text-top">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="line font-weight-bold" routerLinkActive="active" [routerLink]="['/services']">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="line font-weight-bold" routerLinkActive="active" [routerLink]="['/proyectos']">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="line font-weight-bold" routerLinkActive="active" [routerLink]="['/blog']">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="line font-weight-bold" routerLinkActive="active" [routerLink]="['/contacto']">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="line font-weight-bold" routerLinkActive="active" [routerLink]="['/nosotros']">Nosotros</a>
+          </li>
+        </ul>        
+        <button mat-icon-button class="d-flex py-2 px-3  navbar-toggler  example-icon mr-3" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+          aria-label="Example icon-button with menu icon">
+          <mat-icon class="icon">menu</mat-icon>
+        </button>
+       
+
+      </div>
+    </div>
+
+  </nav>
+
+
+  <div class="offcanvas text-white offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+    aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <i class="fa-solid fa-arrow-right" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="text-white nav-link active" aria-current="page" href="#">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Asesorías</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
